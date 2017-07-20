@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.mohamedabdelaziz.secrectcontacts.long_press">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+   <ImageView
+       android:src="@drawable/contacts"
+       android:layout_gravity="center"
+       android:layout_width="200dp"
+       android:layout_height="100dp" />
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+   <Button
+       android:onClick="delete"
+       android:text="Delete"
+       android:layout_margin="5dp"
+       android:background="@drawable/round_button"
+       android:textColor="#005"
+       android:layout_width="80dp"
+       android:layout_height="40dp" />
+    <Button
+        android:onClick="call"
+        android:text="Call"
+        android:background="@drawable/round_button"
+        android:textColor="#005"
+        android:layout_margin="5dp"
+        android:layout_width="80dp"
+        android:layout_height="40dp" />
+    <Button
+        android:onClick="message"
+        android:text="Message"
+        android:layout_margin="5dp"
+        android:textColor="#005"
+        android:background="@drawable/round_button"
+        android:layout_width="80dp"
+        android:layout_height="40dp" />
+    </LinearLayout>
+</LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
